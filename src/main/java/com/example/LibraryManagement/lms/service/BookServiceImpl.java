@@ -53,4 +53,14 @@ private BookRepository bookRepository;
     public void deleteBook(Long id) {
         bookRepository.deleteById(id);
     }
+
+    @Override
+    public boolean existsByTitleAndAuthor(String title, String author) {
+        return bookRepository.existsByTitleAndAuthor(title,author);
+    }
+
+    @Override
+    public boolean checkUpdateExistsByTitle(String title, String author, Long id) {
+        return bookRepository.existsByTitleAndAuthorAndIdNot(title,author,id);
+    }
 }

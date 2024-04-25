@@ -15,4 +15,8 @@ public interface BookService {
     List<BookResponse> getAllBooks();
 
     void deleteBook(Long id);
+
+    boolean existsByTitleAndAuthor(String title, String author);
+
+    boolean checkUpdateExistsByTitle(String title, String author,Long id);
 }
