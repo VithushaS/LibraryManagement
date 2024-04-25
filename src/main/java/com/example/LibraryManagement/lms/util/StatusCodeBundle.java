@@ -34,4 +34,8 @@ public class StatusCodeBundle {
 
     @Value("${message.success.deleteById.book}")
     private String deleteBookSuccessMessage;
+    @Value("${message.validation.book.title.already.exists}")
+    private String bookTitleAlreadyExistsMessage;
+    @Value("${code.validation.book.title.already.exists}")
+    private String validationCodeBookTitleAlreadyExists;
 }
