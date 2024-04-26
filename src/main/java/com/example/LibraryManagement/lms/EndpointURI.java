@@ -9,4 +9,12 @@ public final class EndpointURI {
     public static final String BOOK_BY_ID = BOOK + "/{id}";
 
     public static final String BOOKS = BOOK;
+
+    public static final String PATRON = BASE_API_PATH + "patrons";
+    public static final String UPDATE_PATRON = PATRON;
+    public static final String PATRON_BY_ID = PATRON + "/{id}";
+    public static final String PATRONS =PATRON;
+    public static final String BOOKID = "/{bookId}";
+    public static final String PATRONID = "/{patronId}";
+    public static final String BORROW = BASE_API_PATH + "borrow" + BOOKID + "/patron" + PATRONID;
 }
